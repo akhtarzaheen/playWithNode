@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:development":"node app.js"
+    "start:development": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/akhtarzaheen/playWithNode/issues"
   },
-  "homepage": "https://github.com/akhtarzaheen/playWithNode#readme"
+  "homepage": "https://github.com/akhtarzaheen/playWithNode#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }
