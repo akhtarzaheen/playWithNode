@@ -1,0 +1,20 @@
+{
+  "name": "playwithnode",
+  "version": "1.0.0",
+  "description": "Node.js Guide",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:development":"node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akhtarzaheen/playWithNode.git"
+  },
+  "author": "Zaheen Akhtar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akhtarzaheen/playWithNode/issues"
+  },
+  "homepage": "https://github.com/akhtarzaheen/playWithNode#readme"
+}
