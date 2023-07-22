@@ -1,0 +1,4 @@
+What is Express.js
+- Helps to write better nodejs code and focus on our business logic.
+
+next() - allows the request continue to the next middleware in line
