@@ -1,0 +1,13 @@
+<%- include('include/head.ejs') %>
+
+<%- include('include/navigation.ejs') %>
+    <main class="main-content">
+        <% if( products.length ===0) { %>
+            <h1>No Products Available</h1>
+        
+        <% } else { %>
+            <h1>Products  <%= products[0].product%></h1>
+            <%}%>
+    </main>
+    
+    <%- include('include/footer.ejs') %>  

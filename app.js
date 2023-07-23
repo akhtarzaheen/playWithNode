@@ -1,4 +1,4 @@
-const http = require("http");
+const path = require("path");
 
 const adminRoute = require("./routes/admin");
 
@@ -12,11 +12,17 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
+app.set("view engine", "ejs");
+
+app.set("views", "views");
+
 app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/admin", adminRoute);
 
-app.use(shopRoute);
+app.use("/admin", shopRoute);
 
 app.use(pageNotFoundRoute);
 

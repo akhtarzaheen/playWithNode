@@ -1,0 +1,28 @@
+body{
+    margin: 0px;
+    padding: 0px; 
+}
+.header_nav{
+    margin: 0px;
+    padding: 0px;
+    background-color: #846230;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+.header_nav_ul{
+    margin: 0px;
+  display: flex;
+    text-decoration: none;
+}
+.header_nav_li{
+    list-style-type: none;
+    padding: 20px;
+}
+.header_nav_li .li_items{
+    color: white;
+    text-decoration-line: none;
+}
+.header_nav_li .li_items:hover,.header_nav_li .li_items:active, .header_nav_li .li_items.active {
+    color: burlywood;
+}
