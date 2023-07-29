@@ -2,12 +2,26 @@
 
 <%- include('include/navigation.ejs') %>
     <main class="main-content">
+       
         <% if( products.length ===0) { %>
             <h1>No Products Available</h1>
         
         <% } else { %>
-            <h1>Products  <%= products[0].product%></h1>
+            <% for(let prod of products) {%>
+                <div class="box">
+                <img src="<%= prod.imageUrl%>" alt="prod image" class="prodImage"/>
+            <h3 class="title">Products  <%= prod.title%><span class="price"><%= prod.price%>&#x20b9;</span></h3>
+            <p><%= prod.description%></p>
+            <div class="buttons">
+                <form method="post" action="/admin/productDetails/<%= prod.id%>">
+              <button name="details" class="detailsBtns" >Details</button>
+            </form>
+              <!-- <button  -->
+            </div>
+        </div>
+            <%}  %>
             <%}%>
+       
     </main>
     
     <%- include('include/footer.ejs') %>  

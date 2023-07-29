@@ -2,3 +2,13 @@
 .product_form{
     padding: 20px;
 }
+
+.Heading{
+    text-align: center;
+}
+
+.labelBox{
+    display: grid;
+    padding-bottom: 20px;
+}
+
